@@ -6,7 +6,8 @@ const Input = React.forwardRef( function Input({
     className = "",
     ...props
 }, ref){
-    const id = useId()
+    
+    const id = useId()// generate unique id for efficient input matching
     return (
         <div className='w-full'>
             {label && <label 
